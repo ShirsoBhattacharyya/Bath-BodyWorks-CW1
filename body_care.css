@@ -1,0 +1,217 @@
+/* *{
+  font-family: TradeGothicLTW05-BoldNo\.2,Arial,sans-serif;
+} */
+#container {
+  display: grid;
+  grid-template-columns: 19% 79%;
+}
+/*this is left container  */
+
+#left > div {
+  width: 78%;
+}
+#left > div > h5 {
+  margin-bottom: -5px;
+  padding: 5%;
+}
+#left > div > p {
+  color: grey;
+  font-size: 15px;
+  /* margin-bottom: -4%; */
+  padding: 5%;
+}
+
+/*this is right container  */
+#right {
+  height: auto;
+}
+#right > div > p {
+  font-size: 26px;
+  border-bottom: 1px solid black;
+  font-family: TradeGothicLTW05-BoldNo\.2,Arial,sans-serif;
+}
+#right > div:nth-child(2) > img {
+  width: 100%;
+}
+#button {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+ 
+}
+
+#button > button {
+  justify-content: center;
+  margin-top: 20px;
+  background-color: black;
+  color: white;
+  padding: 12px 14px;
+  border: 0ch;
+  
+}
+
+#button > button:hover {
+  cursor: pointer;
+  background-color: rgb(230, 220, 220);
+  color: black;
+}
+/* filter styling */
+
+#container2 {
+  /* border:1px solid red; */
+  display: grid;
+  grid-template-columns: 75% 20%;
+  margin-bottom: 25px;
+}
+
+#filterbar > p {
+  margin-left: 15px;
+}
+.underLine {
+  text-decoration: line-through;
+}
+#filterbar {
+  display: flex;
+  /* flex-wrap: row; */
+  justify-content: space-between;
+  background-color: #f1e4e4;
+
+  width: 100%;
+  justify-items: center;
+  align-items: center;
+  /* border: 1px solid red; */
+  font-size: 20px;
+  padding-right: 15px;
+}
+
+select {
+  /* border-bottom: 1px solid black; */
+  color: #666;
+  font-size: 15px;
+  width: 220px;
+  height: 40px;
+  border-radius: 0px;
+}
+#filter1 {
+  border-radius: 0px;
+}
+
+#sort {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+#sort > select {
+  width: 180px;
+  height: 40px;
+}
+
+/* middle styling */
+#location-logo {
+  border-top: 2px solid rgb(207, 205, 205);
+  display: flex;
+  text-align: center;
+  border-bottom: 2px solid rgb(207, 205, 205);
+}
+#location-logo > h5 {
+  color: royalblue;
+  word-spacing: 5px;
+}
+#location-logo > a {
+  display: flex;
+  align-items: center;
+}
+
+/* card styling  */
+
+#card-box {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 550px);
+  gap: 20px;
+  text-align: center;
+}
+
+#card-box > div {
+  /* border: 1px solid black; */
+}
+
+#imgdiv > img {
+  width: 100%;
+  /* height: 80%; */
+  margin-left: 13%;
+}
+#prodiv {
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 80%;
+}
+
+#prodiv > h3:first-child {
+  font-family: TradeGothicLTW05-BoldNo\.2,Arial,sans-serif;
+  color: royalblue;
+  font-style: italic;
+  font-size: 17px;
+}
+
+#prodiv > h4 {
+  font-size: 16px;
+  font-family: TradeGothicLTW05-Light,Arial,sans-serif;
+  margin-top: -14px;
+  text-transform: none;
+  color: black;
+  line-height: 16px;
+}
+
+h4 + h3 {
+  font-size: 12px;
+  margin-top: -15px;
+  color: grey;
+  font-family: TradeGothicLTW05-Bold,Arial,sans-serif;
+}
+h3 + p {
+  font-weight: bold;
+  font-size: 20px;
+}
+p + p {
+  color: red;
+  margin-top: -15px;
+  font-size: 14px;
+}
+#addtobagbtn {
+  color: white;
+  background-color: black;
+  width: 99%;
+  height: 40px;
+  font-size: 17px;
+  margin-top: -10px;
+  border: 0ch;
+}
+#addtobagbtn:hover {
+  color: black;
+  background-color: white;
+  cursor: pointer;
+}
+
+#imgdiv {
+  width: 80%;
+  height: 60%;
+}
+
+#prodiv {
+  height: 40%;
+}
+
+#vcontainer2 > h1 {
+  font-family: Trade Gothic W01 Light, Arial, sans-serif;
+  font-size: 30px;
+  line-height: 21px;
+  color: #333;
+  font-weight: 400;
+}
+.drop {
+  color: orange;
+}

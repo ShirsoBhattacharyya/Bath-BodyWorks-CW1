@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Body Care</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites-BathAndBodyWorks-Library/en_US/v1651757968673/css/images/gingham-pattern.svg?yocs=o_s_">
+    <link rel="stylesheet" href="body_care.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="left">
+        <div>
+          <h5>TOP OFFERS</h5>
+          <p>Buy 3, Get 3 Free All Full-Size Body Care</p>
+          <p>Buy 2, Get 1 Free Travel, Hand & Lip Care</p>
+        </div>
+        <div>
+          <h5>FEATURED</h5>
+          <p>New Body Care</p>
+          <p>Retired Fragrances</p>
+          <p>Travel Size</p>
+        </div>
+        <div>
+          <h5>BATH & SHOWER</h5>
+          <p>All Bath & Shower</p>
+          <p>Body Wash & Shower Gel</p>
+          <p>Bubble Bath</p>
+          <p>Bar Soap</p>
+          <p>Bath Accessories</p>
+        </div>
+        <div>
+          <h5>MOISTURIZERS</h5>
+          <p>All Moisturizers</p>
+          <p>Body Lotion</p>
+          <p>Body Cream</p>
+          <p>Hand Cream</p>
+          <p>Lip Gloss & Balms</p>
+        </div>
+        <div>
+          <h5>FRAGRANCE</h5>
+          <p>All Fragrance</p>
+          <p>Body Sprays & Mists</p>
+          <p>Perfume & Cologne</p>
+        </div>
+        <div>
+          <h5>AROMATHERAPY</h5>
+          <p>All Aromatherapy</p>
+          <p>Body Wash & Shower Gel</p>
+          <p>Moisturizers</p>
+          <p>Mists & Sprays</p>
+        </div>
+        <div>
+          <h5>MEN'S</h5>
+          <p>All Men's</p>
+          <p>Body Wash & Shower Gel</p>
+          <p>Moisturizers</p>
+          <p>Body Spray & Cologne</p>
+        </div>
+        <div>
+          <h5>GIFT SETS</h5>
+          <p>Body Care Gift Sets</p>
+        </div>
+      </div>
+      <div id="right">
+        <div>
+          <p>Body Care</p>
+        </div>
+        <div>
+          <img
+            src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw0817b914/images/Spring2022/tbctier_sp3_gh.jpg?yocs=s_"
+            alt=""
+          />
+        </div>
+        <div id="button">
+          <button>ALL BODY CARE</button>
+          <button>FRAGRANCE</button>
+          <button>BATH & SHOWER</button>
+          <button>MOISTURIZERS</button>
+          <button>AEROMATHARAPY</button>
+          <button>MEN'S</button>
+        </div>
+        <!-- for filter part -->
+
+        <div id="container2">
+          <div id="filterbar">
+            <p>Filter By:</p>
+
+            <select name="Filter By" id="filter1" onChange="byproduct()">
+              <option value="Product Type" class="underLine">Product Type</option>
+              <option value="New!">New!</option>
+              <option value="New Fragrance">New Fragrance</option>
+            </select>
+
+            <select name="Filter By" id="filter2" onChange="byNamefragnance()">
+              <option value="Fragnance Name" class="underLine">Fragnance Name</option>
+              <option value="Butterfly">Butterfly</option>
+              <option value="Freshwater">Freshwater</option>
+              <option value="Japanese Cherry Blossom">Japanese Cherry Blossom</option>
+              <option value="Pineapple Lime Eucalyptus">Pineapple Lime Eucalyptus</option>
+              <option value="White Tea & Sage">White Tea & Sage</option>
+              <option value="Lavender Vanilla">Lavender Vanilla</option>
+            </select>
+
+            <select name="Filter By" id="filter3" onChange="byfragnance()">
+              <option value="Fragnance Category" class="underLine">Fragnance Category</option>
+              <option value="Shower Gel">Shower Gel</option>
+              <option value="Body Lotion">Body Lotion</option>
+              <option value="Fine Fragrance Mist">Fine Fragrance Mist</option>
+              <option value="Daily Nourishing Body Lotion">Daily Nourishing Body Lotion</option>
+              <option value="Ultimate Hydration Body Cream">Ultimate Hydration Body Cream</option>
+            </select>
+          </div>
+          <div id="sort">
+            <select name="Sort By" id="dosort" onChange="sortfn()">
+              <option value="Sort By">Sort By</option>
+              <option value="HTL">Price High to Low</option>
+              <option value="LTH">Price Low to High</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- middle part -->
+        <div id="location-logo">
+          <img
+            src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/Sites-BathAndBodyWorks-Site/-/en_US/v1651571161245/images/svg-icons/bopis-icon-small.svg?yocs=o_s_"
+            alt="logo"
+          />
+          <h5>SHOP YOUR STORE:</h5>
+          <a href="#">Set Store</a>
+        </div>
+        <!-- creating cards from here -->
+
+        <div id="card-box">
+          <div>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </body>
+  <script src="./Body_care.js"></script>
+</html>
