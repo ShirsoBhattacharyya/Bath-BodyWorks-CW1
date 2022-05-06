@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="create.css">
+</head>
+
+<body>
+   <form>
+ 
+    <div class="Container">
+        <p class="Login"><a href="#">Home</a>/ CREATE AN ACCOUNT</p>
+        <div class="content">
+            <div class="Poster">
+                <img src="https://www.bathandbodyworks.com/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw67bc4699/images/banners/sign-in_d.png" class="img" alt="">
+            </div>
+    <div class="Heading">
+        <h2>Create An Account</h2>
+        <hr>
+    </div>
+    <div id="container1">
+   <div class="signUp">
+        <br>
+        <label>First Name</label>
+        <br>
+        <br>
+        <input type="text" id="firstName">
+
+    </div>
+    <div class="signUp"><br>
+        <label>Last Name</label>
+        <br>
+        <br>
+        <input type="text" id="lastName">
+
+    </div>
+    <div class="signUp">
+        <br>
+
+        <label>E-mail</label>
+        <br>
+        <br>
+        <input type="text" id="email">
+
+    </div>
+    <div class="signUp">
+        <br>
+        <label   >Street Address</label>
+        <br>
+        <br>
+        <input type="text" id="steetName">
+
+    </div>
+    <div class="signUp"><br>
+        <label>City</label>
+        <br>
+        <br>
+        <input type="text" id="cityName">
+
+    </div>
+    <div class="signUp">
+        <br>
+        <label>State</label>
+        <br>
+        <br>
+        <input type="text" id="state">
+
+    </div>
+    <div class="signUp">
+        <br>
+        <label>ZIP/Postal Code</label>
+        <br>
+        <br>
+        <input type="text" id="code">
+
+    </div>
+    <div class="signUp">
+        <br>
+        <label>Phone</label>
+        <br>
+        <br>
+
+        <input type="text" id="phone">
+        <p>We'll use this to look up your Rewards account in stores.</p>
+
+    </div>
+    <div class="signUp">
+        
+
+        <label>Password</label>
+        <br>
+        <br>
+        <input type="text" id="password">
+
+    </div>
+    <div class="signUp">
+        <br>
+      <br>
+      <input type="submit" value= "Create Account">
+    </div>
+    </div>
+    <!-- console. -->
+</form>
+
+    <div class="signUpLast">
+        <p>Questions?</p>
+        </div>
+        <div class="signUpLast1">
+        <p>
+            We're here for you! Call us at 1-800-756-5005.</p>
+        </p>
+    </div>
+
+
+</body>
+
+</html>
+<script>
+
+document.querySelector("form").addEventListener("submit",Datax)
+var arr=(JSON.parse(localStorage.getItem("application"))||[]);
+
+function Datax(){
+    event.preventDefault();
+var Obj={
+     firstname:document.querySelector("#firstName").value,
+       lastname:document.querySelector("#lastName").value,
+       email:document.querySelector("#email").value,
+       street:document.querySelector("#steetName").value,
+       city:document.querySelector("#cityName").value,
+       code:document.querySelector("#code").value,
+       state:document.querySelector("#state").value,
+       phone:document.querySelector("#phone").value,
+       pass:document.querySelector("#password").value
+
+    
+
+    }
+   
+
+    arr.push(Obj)
+    console.log(arr)
+
+    localStorage.setItem("application",JSON.stringify(arr));
+    alert("Account Created Successfully : you can login")
+    window.location.href="./signin.html";
+    
+}
+</script>
