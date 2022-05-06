@@ -1,0 +1,75 @@
+#container{
+    display:flex;
+    width: 100%;
+    height: 1000px;
+}
+#container>div {
+/* margin: 20px; */
+width: 20%;
+/* border: 2px solid black; */
+}
+
+#container>div:nth-of-type(2) {
+flex-grow: 3;
+}
+#contents>div {
+width: 100%;
+height: 360px;
+/* border: 1px solid blue; */
+}
+#shop_category {
+display: grid;
+grid-template-columns: repeat(4,1fr);
+grid-template-rows: repeat(1,1fr);
+gap:30px;
+margin: auto;
+}
+
+#shop_category>div {
+height: auto;
+}
+#shop_category>div>img{
+    width:100%;
+}
+#shop_category  button {
+border: 3px solid #333333;
+background-color: white;
+color: #333333;
+margin-left: 60px;
+height: 40px;
+width: 160px;
+padding:10px 10px 10px 10px;
+font-family: "Trade Gothic W01 Bold_2",Arial,sans-serif;
+font-size: 12px;
+font-size: 0.75rem;
+}
+#shop_category  button:hover{
+color:white;
+background-color: #333333;
+cursor: pointer;
+}
+#image_2{
+    height:200px;
+    width:100%;
+}
+#title {
+font-size: 25px;
+color: gray;
+}
+P span {
+background: #fff;
+padding: 0 10px;
+}
+#p {
+width: 100%;
+text-align: center;
+border-bottom: 1px solid #000;
+line-height: 0.1em;
+margin: 10px 0 20px;
+}
+#text_container{
+width: 50%;
+margin: 5%;
+color: gray;
+line-height: 25px;
+}

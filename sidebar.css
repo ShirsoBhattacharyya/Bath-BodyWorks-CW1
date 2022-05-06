@@ -1,0 +1,9 @@
+#sidebar a {
+    text-decoration: none;
+    color: gray;
+    font-size: 15px;
+}
+
+#sidebar a:hover {
+    color: rgb(39, 39, 44);
+}
