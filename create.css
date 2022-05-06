@@ -1,0 +1,51 @@
+.Login {
+    width: 15%;
+    font-size: 13px;
+    margin-left: 2%;
+    margin-top: 6%;
+    /* border: 1px solid black; */
+}
+
+
+
+.Container {
+    width: 80%;
+    height: 650px;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    /* border: 1px solid green; */
+}
+
+.Poster {
+    width: 100%;
+    height: 120px;
+    /* border: 1px solid yellow; */
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+}
+#container1{
+    /* border: 1px solid black; */
+    margin-left: 400px;
+    height: auto;
+    width: 300px;
+}
+.signUpLast>p{
+    /* border: 1px solid black; */
+    margin-left: 500px;
+
+}
+.signUpLast1>p{
+    /* border: 1px solid black; */
+    margin-left: 410px;
+    font-size: small;
+
+}
+input{
+    height: 20px;
+    width: 90%
+   
+}

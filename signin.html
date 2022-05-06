@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="signin.css">
+</head>
+
+<body>
+    <div class="Container">
+        <p class="Login"><a id="x" href="#">Home</a>/ SIGN IN OR SIGN UP</p>
+
+        <div class="Poster">
+            <img src="https://www.bathandbodyworks.com/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw67bc4699/images/banners/sign-in_d.png"
+                class="img" alt="">
+        </div>
+        <div class="topHeading">
+            <h2>Sign In or Sign Up</h2>
+        </div>
+        <div class="SignBox">
+
+            <div class="SignBox_left">
+                <div class="SignBox_left1">
+                    <p>SIGN IN</p>
+                    <p>If you already have an account with us, sign in below</p>
+                </div>
+                <div class="SignBox_left_input">
+                    <label>Email Address</label><br><br>
+                    <input type="text" id="loginEmail"><br><br>
+                    <label>Password</label><br><br>
+                    <input type="password" id="loginPass"><br><br>
+                    <a id="y" href="#">Forgot Password?</a><br><br><br>
+                    <button id="loginBtn">SIGN IN</button><br>
+                </div>
+            </div>
+            <div id="spacer">
+
+
+
+                <div class="line">
+                    <div class="roundDiv">
+                        <h3>OR</h3>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="SignBox_left">
+                <div class="SignBox_left1">
+                    <p>SIGN UP</p>
+                    <p>Create an account to access the best of your favorite store</p>
+                </div>
+                <div class="SignBox_left_input1">
+                    <div class="SignBox_left_input1_Img">
+                        <img src="https://www.bathandbodyworks.com/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dwf946a6ac/images/loyalty/July19/nonloyalty_5thmkt_signuptile_D.png"
+                            class="img" alt="">
+                    </div>
+                    <button><a href="createaccount.html">CREATE AN ACCOUNT</a></button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+
+var user_data = JSON.parse(localStorage.getItem("application")) || [];
+
+
+
+
+document.getElementById("loginBtn").addEventListener("click",check)
+
+
+
+function check() {
+    var email_input = document.getElementById("loginEmail").value;
+    var pass_input = document.getElementById("loginPass").value;
+
+    var success= 0
+    var nodata=0
+    var user_n=""
+    var wrong_pass=0
+
+if(user_data=="")
+{
+    alert("Please Create an Account")
+}
+else{
+    for(var i = 0 ; i<user_data.length;i++)
+    {
+      
+      var x = user_data[i]
+
+      var user_value = Object.values(x)
+      
+      var email_data= user_value[2]
+      var pass_data= user_value[8]
+
+      console.log(email_data)
+      console.log(pass_data)
+
+      if(email_input==email_data && pass_input ==pass_data )
+      {
+        success++
+        user_n=email_input
+      }
+      else if (email_input!=email_data && pass_input!=pass_data )
+      {
+        nodata++
+      }
+      else if (email_input==email_data && pass_input!=pass_data )
+      {
+        wrong_pass++
+      }
+     
+     
+
+    }
+if(success>0)
+{
+  alert( user_n + " is logged in")
+  window.location.href="./index.html";
+}
+else if(wrong_pass>0)
+{
+  alert( "invalid UserName or Password")
+
+}
+else if(nodata>0){
+  alert("! No Account found! ")
+  window.location.href="./create.html";
+}
+
+}
+
+
+    
+
+  }
+</script>
