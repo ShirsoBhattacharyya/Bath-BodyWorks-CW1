@@ -4,18 +4,26 @@
 #mainbox{
     /* border: 1px solid red; */
     margin-top: 20px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 20% 80%;
     height:max-content;
+    margin-bottom: 3%;
     
    
 }
+#sidebar{
+    /* width: 25%;  */
+    margin-top: 8%;
+    margin-left: 25%;
+   
+  }
 
 #vcontainer2{
     /* border:1px solid red; */
     width:80%;
     height: auto;
-    position: absolute;
-    right: 3%;
+    /* position: absolute; */
+   
    
 
 }
@@ -32,7 +40,7 @@
     background-color: #f2f2f2;
     /* text-decoration: underline; */
   
-    position: relative;
+    /* position: relative; */
     /* display: inline-block; */
     width: 100%;
     justify-items: center;
@@ -73,7 +81,7 @@ select{
     
    
    
-    row-gap: -10px;
+    /* row-gap: -10px; */
     /* border: 5px solid green; */
     margin-bottom: 30px;
     
@@ -171,36 +179,14 @@ select{
     gap: 5px;
 }
 
-/* sidebar css
 
-#sidebar a {
-    text-decoration: none;
-    color: gray;
-    font-size: 18px;
+
+#rating{
+    margin-top: 10px;
 }
 
-#sidebar a:hover {
-    color: rgb(39, 39, 44);
-}
-
-#sidebar{
-    margin-left:150px;
-}
-
-#sidebar h5{
-    font-size: 18px;
-    /* color: red; */
-} */
 
 
 
 
 
-
-
-footer
-{
-    
-    margin-top: 1500px;
-   
-}

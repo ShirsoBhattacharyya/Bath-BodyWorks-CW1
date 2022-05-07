@@ -11,13 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gifts Under $30</title>
 
-    <style>
-        footer{
     
-            margin-top: 150%;
-   
-            }
-    </style>
 </head>
 <body>
     <div id="header"> 
@@ -495,5 +489,92 @@
     
 </body>
 </html>
+<script >
+
+
+    // Navbar fn.lity
+    let drop_1 = document.getElementById("nav-dropdown0");
+        let drop_2 = document.getElementById("nav-dropdown1");
+        let drop_3 = document.getElementById("nav-dropdown2");
+        let drop_4 = document.getElementById("nav-dropdown3");
+        let category = document.getElementsByClassName("category");
+        let sub_cat_drop = document.getElementsByClassName("nav-sub-dropdown");
+        let sub_cat_sub_el = document.getElementsByClassName("sub-category");
+    
+    
+    var dropdowns = document.getElementsByClassName("drop")
+    drop_1.addEventListener("mouseover",function(){
+        dropdowns[0].classList.toggle("open-dropdown")
+    })
+    
+    drop_1.addEventListener("mouseout",function(){
+        dropdowns[0].classList.toggle("open-dropdown")
+    })
+    
+    drop_2.addEventListener("mouseover",function(){
+        dropdowns[1].classList.toggle("open-dropdown")
+    })
+    
+    drop_2.addEventListener('mouseout',function(){
+        dropdowns[1].classList.toggle("open-dropdown")
+    })
+    
+    drop_3.addEventListener('mouseover',function(){
+        dropdowns[2].classList.toggle("open-dropdown")
+    })
+    
+    drop_3.addEventListener('mouseout',function(){
+        dropdowns[2].classList.toggle("open-dropdown")
+    })
+    
+    drop_4.addEventListener('mouseover',function(){
+        dropdowns[3].classList.toggle("open-dropdown")
+    })
+    
+    drop_4.addEventListener('mouseout',function(){
+        dropdowns[3].classList.toggle("open-dropdown")
+    })
+    
+    for(var i=0;i<sub_cat_drop.length;i++){
+        sub_cat_drop[i].addEventListener('mouseover',function(){
+        //    console.log(sub_cat_sub_el[3])
+           event.target.childNodes[1].classList.toggle("open-sub-category")
+                var a = event.target.parentNode.classList;
+      
+        })
+        sub_cat_drop[i].addEventListener('mouseleave',function(){
+            //    console.log(sub_cat_sub_el[3])
+                event.target.childNodes[1].classList.toggle("open-sub-category")
+    
+        })
+    }
+    
+    // Mobile Nav slide
+    let opening = document.getElementsByClassName('start_nav');
+    let navbar = document.getElementsByClassName('nav-links');
+    let close = document.getElementById('close-btn')
+    let nav = document.querySelector('nav');
+    
+    opening[0].addEventListener('click',()=>{
+          navbar[0].classList.toggle('open-nav');
+          document.body.style.background = 'rgba(0,0,0,0.4)';
+          nav.classList.toggle('pos');
+          nav.style.overflowY = 'scroll';
+    })
+    
+    close.addEventListener('click',()=>{
+        navbar[0].classList.toggle('open-nav')
+        nav.classList.toggle('pos');
+        document.body.style.background = 'none';
+        //   nav.style.overflowY = 'scroll';
+    });
+    
+    
+        let account_drop_btn = document.getElementById('myAccount');
+        let dropAccount = document.getElementById('account');
+        account_drop_btn.addEventListener('click',function(){
+            dropAccount.classList.toggle('open_account')
+        })
+    </script>
 
 <script src="giftsunder30.js"> </script>
