@@ -16,7 +16,7 @@
         #left>div>p{
             color: grey;
             font-size: 15px;
-            margin-bottom: -7%;
+            /* margin-bottom: -7%; */
             padding: 5%;
         }
         #left>div>p:hover{
@@ -74,11 +74,13 @@
 .paras>#head{
     color: rgb(105, 105, 105);
     font-size: 30px;
+    margin-bottom: 5%;
 }
 .paras>div>p{
     color: grey;
     line-height: 25px;
     font-size: 17px;
+    margin-bottom: 3.5%;
   
 }
 
