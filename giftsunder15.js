@@ -366,7 +366,7 @@ function byfragnance(){
     });
      
      
-     prodiv.append(name,desc,price, star,addtobag)
+     prodiv.append(name,desc,price,addtobag, star)
          
            card.append(imgdiv, prodiv);
      
