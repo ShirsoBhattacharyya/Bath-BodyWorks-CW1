@@ -1,0 +1,206 @@
+
+
+
+#mainbox{
+    /* border: 1px solid red; */
+    margin-top: 20px;
+    display: flex;
+    height:max-content;
+    
+   
+}
+
+#vcontainer2{
+    /* border:1px solid red; */
+    width:80%;
+    height: auto;
+    position: absolute;
+    right: 3%;
+   
+
+}
+
+#vcontainer2>h1{
+    margin-bottom: 20px;
+}
+
+
+#vfilterbar{
+    display: flex;
+    flex-wrap: row;
+    justify-content: space-around;
+    background-color: #f2f2f2;
+    /* text-decoration: underline; */
+  
+    position: relative;
+    /* display: inline-block; */
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    font-size: 20px;
+
+}
+
+#vfilterbar>p{
+    font-family: Trade Gothic W01 Light,Arial,sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+select{
+    
+    /* color: #666; */
+    background-color: #f2f2f2;
+    font-family: Trade Gothic W01 Light,Arial,sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    /* text-decoration: underline; */
+    width: 250px;
+    height: 40px;
+    border: 0px;
+
+    border-bottom:3px solid black;
+}
+
+
+#vitemsu15{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:20px;
+    text-align: center;
+    
+   
+   
+    row-gap: -10px;
+    /* border: 5px solid green; */
+    margin-bottom: 30px;
+    
+}
+
+#vitemsu15>div{
+    /* border:5px solid black; */
+}
+
+
+#imgdiv>img{
+   width: 75%;
+   height: 100%;
+   margin-left: 25%;
+}
+
+
+#prodiv>h3 
+{
+    font-family: TradeGothicLTW05-BoldNo\.2,Arial,sans-serif;
+    letter-spacing: .5px;
+}
+
+
+#prodiv>h4{
+    font-size: 13px;
+    font-size: .8125rem;
+    font-family: TradeGothicLTW05-Light,Arial,sans-serif;
+    margin: 0;
+    text-transform: none;
+    color: #666;
+    line-height: 16px;
+    line-height: 1rem;
+}
+
+
+#prodiv>p{
+   font-weight: 700;
+   font-size: 18px;
+   font-family: TradeGothicLTW05-Bold,Arial,sans-serif;
+  
+}
+#addtobagbtn{
+    color: white;
+    background-color: black;
+    width:80%;
+    height: 40px;
+    font-size: 20px;
+
+    
+    
+    
+}
+
+#imgdiv{
+    width:80%;
+    height:60%;
+    /* border: 1px solid red; */
+    /* margin-bottom: 70px; */
+}
+
+#prodiv{
+    height: 40%;
+}
+
+
+#vcontainer2>h1{
+    font-family: Trade Gothic W01 Light,Arial,sans-serif;
+    font-size: 30px;
+    /* font-size: 1.3125rem; */
+    line-height: 21px;
+    /* line-height: 1.3125rem; */
+    color: #333;
+    /* margin: 1.25rem 0; */
+    font-weight: 400;
+
+    
+}
+
+
+
+/* delete btn of cart  */
+
+#dletebtn{
+    background-color: #666;
+    width:80%;
+    height: 45px;
+    font-size: 20px;
+}
+
+
+#cartvalue{
+    display: flex;
+    margin: auto;
+    gap: 5px;
+}
+
+/* sidebar css
+
+#sidebar a {
+    text-decoration: none;
+    color: gray;
+    font-size: 18px;
+}
+
+#sidebar a:hover {
+    color: rgb(39, 39, 44);
+}
+
+#sidebar{
+    margin-left:150px;
+}
+
+#sidebar h5{
+    font-size: 18px;
+    /* color: red; */
+} */
+
+
+
+
+
+
+
+footer
+{
+    
+    margin-top: 1500px;
+   
+}
