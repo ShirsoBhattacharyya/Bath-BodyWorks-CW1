@@ -1,0 +1,150 @@
+
+#vcontainer2{
+    width:40%;
+    margin: auto;
+    /* border: 1px solid red; */
+    margin-top: 50px;
+
+}
+
+
+
+
+#vhead{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:20px;
+    gap: 10px;
+    
+    
+}
+
+
+
+
+#vhead>h3{
+    font-family: "TradeGothicLTW05-BoldNo.2", Arial, sans-serif;
+    
+   
+    text-transform: uppercase;
+    font-size: 38px;
+    line-height: 1.3125rem;
+    color: #333;
+
+}
+
+#vhead>p{
+    font-family: Trade Gothic W01 Light,Arial,sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    font-size: .875rem;
+    color: #666;
+    margin-bottom: 0;
+}
+
+
+#vbox2>img{
+    width:100%;
+    margin-top: 15px;
+}
+
+#vbox3{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:20px;
+    text-align: center;
+    row-gap: -10px;
+    /* border: 5px solid green; */
+    margin-bottom:30px;
+    
+}
+
+#vbox3>div{
+    /* border:5px solid black; */
+}
+
+
+#imgdiv>img{
+   width: 75%;
+   height: 100%;
+   margin-left: 25%;
+}
+
+
+#prodiv>h3 
+{
+    font-family: TradeGothicLTW05-BoldNo\.2,Arial,sans-serif;
+    letter-spacing: .5px;
+}
+
+
+#prodiv>h4{
+    font-size: 13px;
+    font-size: .8125rem;
+    font-family: TradeGothicLTW05-Light,Arial,sans-serif;
+    margin: 0;
+    text-transform: none;
+    color: #666;
+    line-height: 16px;
+    line-height: 1rem;
+}
+
+
+#prodiv>p{
+   font-weight: 700;
+   font-size: 18px;
+   font-family: TradeGothicLTW05-Bold,Arial,sans-serif;
+  
+}
+#addtobagbtn{
+    color: white;
+    background-color: black;
+    width:80%;
+    height: 40px;
+    font-size: 20px;
+
+    
+    
+    
+}
+
+#imgdiv{
+    width:80%;
+    height:60%;
+    /* border: 1px solid red; */
+    /* margin-bottom: 70px; */
+}
+
+#prodiv{
+    height: 40%;
+}
+
+
+#vbox4>p{
+    font-family: Trade Gothic W01 Light,Arial,sans-serif;
+    font-weight: 400;
+    margin-top: 10px;
+    font-size: 14px;
+    text-align:justify;
+    line-height: 24px;
+    color:#666;
+}
+
+#vbox4>h2{
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 1.125;
+    font-family: Trade Gothic W01 Light,Arial,sans-serif;
+    color: #333;
+    text-transform:capitalize;
+    font-weight: 400;
+}
+
+#vbox4>#heading{
+    
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+}

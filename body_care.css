@@ -14,7 +14,7 @@
   margin-bottom: -5px;
   padding: 5%;
 }
-#left > div > p {
+#left>div > p {
   color: grey;
   font-size: 15px;
   /* margin-bottom: -4%; */
@@ -24,6 +24,7 @@
 /*this is right container  */
 #right {
   height: auto;
+  margin-bottom: 30px;
 }
 #right > div > p {
   font-size: 26px;
@@ -69,9 +70,9 @@
 #filterbar > p {
   margin-left: 15px;
 }
-.underLine {
+/* .underLine {
   text-decoration: line-through;
-}
+} */
 #filterbar {
   display: flex;
   /* flex-wrap: row; */
@@ -79,6 +80,7 @@
   background-color: #f1e4e4;
 
   width: 100%;
+  height: 60px;
   justify-items: center;
   align-items: center;
   /* border: 1px solid red; */
@@ -109,24 +111,29 @@ select {
 }
 
 /* middle styling */
-#location-logo {
+#location-phutu {
   border-top: 2px solid rgb(207, 205, 205);
   display: flex;
-  text-align: center;
   border-bottom: 2px solid rgb(207, 205, 205);
+  align-items: center;
+  height: 50px;
 }
-#location-logo > h5 {
+#location-phutu > h5 {
   color: royalblue;
-  word-spacing: 5px;
+  word-spacing: 4px;
 }
-#location-logo > a {
+#location-phutu>img{
+  height: 50%;
+  margin-right: 7px;
+}
+#location-phutu > a {
   display: flex;
   align-items: center;
 }
 
 /* card styling  */
 
-#card-box {
+#cardpro-box {
   margin-top: 40px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -135,9 +142,10 @@ select {
   text-align: center;
 }
 
-#card-box > div {
-  /* border: 1px solid black; */
-}
+/* #cardpro-box > div {
+  border: 1px solid black;
+} */
+
 
 #imgdiv > img {
   width: 100%;
@@ -153,6 +161,7 @@ select {
 #prodiv > h3:first-child {
   font-family: TradeGothicLTW05-BoldNo\.2,Arial,sans-serif;
   color: royalblue;
+  margin-bottom: 10px;
   font-style: italic;
   font-size: 17px;
 }
@@ -160,7 +169,8 @@ select {
 #prodiv > h4 {
   font-size: 16px;
   font-family: TradeGothicLTW05-Light,Arial,sans-serif;
-  margin-top: -14px;
+  margin-top: -4px;
+  /* margin */
   text-transform: none;
   color: black;
   line-height: 16px;
@@ -168,17 +178,20 @@ select {
 
 h4 + h3 {
   font-size: 12px;
-  margin-top: -15px;
+  /* margin-top: -5px; */
   color: grey;
   font-family: TradeGothicLTW05-Bold,Arial,sans-serif;
 }
-h3 + p {
+#prodiv>h3+p {
   font-weight: bold;
   font-size: 20px;
+  margin-top: 25px;
+  margin-bottom: 10px;
 }
-p + p {
+#prodiv>#Doit{
   color: red;
-  margin-top: -15px;
+  /* margin-top: -15px; */
+  padding: 0px 7px 0px 7px;
   font-size: 14px;
 }
 #addtobagbtn {
@@ -187,7 +200,7 @@ p + p {
   width: 99%;
   height: 40px;
   font-size: 17px;
-  margin-top: -10px;
+  /* margin-top: -10px; */
   border: 0ch;
 }
 #addtobagbtn:hover {
@@ -205,13 +218,14 @@ p + p {
   height: 40%;
 }
 
-#vcontainer2 > h1 {
+/* #container2 > h1 {
   font-family: Trade Gothic W01 Light, Arial, sans-serif;
   font-size: 30px;
   line-height: 21px;
   color: #333;
   font-weight: 400;
-}
-.drop {
+} */
+.dropit {
   color: orange;
+  margin-top: 2%;
 }
