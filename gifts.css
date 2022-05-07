@@ -1,0 +1,143 @@
+#mainbox{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    
+}
+
+#sidebar{
+  width: 25%; 
+}
+
+#vconatainer{
+    /* border:1px solid red; */
+    width:75%;
+    height: auto;
+    position: absolute;
+    right: 3%;
+}
+
+#vp1{
+    font-family: Trade Gothic W01 Light,Arial,sans-serif;
+    font-size: 21px;
+    font-size: 1.3125rem;
+    line-height: 21px;
+    line-height: 1.3125rem;
+    color: #333;
+    margin: 1.25rem 0;
+    font-weight: 400;
+   
+}
+
+#vp1+hr {
+    margin-bottom: 15px;
+    
+}
+
+#vbox1>img{
+    width:100%;
+    margin-bottom: 20px;
+
+}
+
+#vbox2>img{
+    width:100%;
+    margin-bottom: 20px;
+    cursor: pointer;
+
+}
+
+#vbox3{
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#vbox3>img{
+    width:30%;
+
+}
+
+#vbox4>img{
+    width: 100%;
+    margin: auto;
+}
+
+#vbox5{
+    width:100%;
+    height: auto;
+    background-color:#fabecc;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+    
+}
+
+.vbox6{
+  width:20%;
+  height: 50px;
+  font-family: "Trade Gothic W01 Regular", Arial, sans-serif;
+    font-size: 14px;
+  background-color: #ffff;
+  display: flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+    margin-top:20px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+#vp2{
+    font-family: Trade Gothic W01 Light,Arial,sans-serif;
+    color: #333;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+#vp3{
+    font-family: Trade Gothic W01 Light,Arial,sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    font-size: .875rem;
+    color: #666;
+    line-height: 24px;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.75;
+}
+
+#vconatainer>#vp1{
+    font-family: Trade Gothic W01 Light,Arial,sans-serif;
+    font-size: 30px;
+    /* font-size: 1.3125rem; */
+    line-height: 21px;
+    /* line-height: 1.3125rem; */
+    color: #333;
+    /* margin: 1.25rem 0; */
+    font-weight: 400;
+}
+
+/* sidebar css */
+
+#sidebar a {
+    text-decoration: none;
+    color: gray;
+    font-size: 18px;
+}
+
+#sidebar a:hover {
+    color: rgb(39, 39, 44);
+}
+
+#sidebar{
+    margin-left:150px;
+}
+
+#sidebar h5{
+    font-size: 18px;
+    /* color: red; */
+}
