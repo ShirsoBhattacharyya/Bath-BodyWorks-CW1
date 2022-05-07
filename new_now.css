@@ -1,0 +1,85 @@
+
+#container{
+    display: grid;
+    grid-template-columns: 19% 79%;
+}
+
+        /*this is left container  */
+
+        #left>div{
+            width: 78%;
+        }
+        #left>div>h5{
+            margin-bottom: -5px;
+            padding: 5%;
+        }
+        #left>div>p{
+            color: grey;
+            font-size: 15px;
+            margin-bottom: -7%;
+            padding: 5%;
+        }
+        #left>div>p:hover{
+            cursor: pointer;
+        }
+
+
+
+      /*this is right container  */
+#right{
+    height: auto;
+}
+#right>div>p{
+    font-size: 26px;
+    border-bottom: 1px solid black;
+}
+#right>div:nth-child(2)>img{
+    width: 100%;
+}
+#right>div:nth-child(2)>img:hover{
+    cursor: pointer;
+}
+#right>div:nth-child(3)>img{
+    width: 100%;
+}
+#right>div:nth-child(3)>img:hover{
+    cursor: pointer;
+}
+#right>div:nth-child(4)>img{
+    width: 100%;
+}
+#right>div:nth-child(4)>img:hover{
+    cursor: pointer;
+}
+#right>div:nth-child(5)>img{
+    width: 100%;
+}
+#right>div:nth-child(5)>img:hover{
+    cursor: pointer;
+}
+#right>div:nth-child(6)>img{
+    width: 100%;
+}
+#right>div:nth-child(6)>img:hover{
+    cursor: pointer;
+}
+
+
+/* paras styles */
+.paras{
+    margin-top: 30px;
+    width: 80%;
+    margin-bottom: 150px;
+}
+.paras>#head{
+    color: rgb(105, 105, 105);
+    font-size: 30px;
+}
+.paras>div>p{
+    color: grey;
+    line-height: 25px;
+    font-size: 17px;
+  
+}
+
+
