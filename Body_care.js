@@ -1,7 +1,8 @@
+// navbar part 
 
 
 
-
+// body part
 var prounder15data = [
 
   
@@ -325,12 +326,12 @@ var cartArr = JSON.parse(localStorage.getItem("cartItems")) || [];
   
 function displaydata(data){
 
-  document.querySelector("#card-box").innerHTML="";
+  document.querySelector("#cardpro-box").innerHTML="";
 
   data.forEach( function (ele) {
 
   var card = document.createElement("div");
-  card.setAttribute("id","card")
+  card.setAttribute("id","cardpro")
  
   var imgdiv = document.createElement("div");
   imgdiv.setAttribute("id", "imgdiv")
@@ -355,6 +356,7 @@ function displaydata(data){
   price.innerText=ele.prorate;
 
    var p = document.createElement("p");
+   p.setAttribute("id","Doit")
    p.innerText = ele.profragnance;
 
    var addtobag = document.createElement("button");
@@ -368,16 +370,16 @@ function displaydata(data){
     
     // sd.style.color ="orange"
     var span1 = document.createElement("span");
-    span1.setAttribute("class","fa fa-star drop");
+    span1.setAttribute("class","fa fa-star dropit");
     
     var span2 = document.createElement("span");
-    span2.setAttribute("class","fa fa-star drop");
+    span2.setAttribute("class","fa fa-star dropit");
     // span2.innerText = "fa fa-star"
     var span3 = document.createElement("span");
-    span3.setAttribute("class","fa fa-star drop");
+    span3.setAttribute("class","fa fa-star dropit");
     // span3.innerText = "fa fa-star"
     var span4 = document.createElement("span");
-    span4.setAttribute("class","fa fa-star drop");
+    span4.setAttribute("class","fa fa-star dropit");
     // span4.innerText = "fa fa-star"
     var span5 = document.createElement("span");
     span5.setAttribute("class","fa fa-star");
@@ -389,7 +391,7 @@ function displaydata(data){
      
    card.append(imgdiv, prodiv);
  
-   document.querySelector("#card-box").append(card);
+   document.querySelector("#cardpro-box").append(card);
  
  });
 }
