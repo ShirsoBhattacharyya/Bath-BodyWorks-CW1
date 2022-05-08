@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
 
 /*Footer*/
-
+*{
+  font-family: sans-serif;
+}
 footer {
   border-top: 2px solid rgb(233, 230, 230);
 }
@@ -25,12 +27,14 @@ footer {
 .col-4 ul,
 .col-5 ul {
   line-height: 2;
+  margin-left:40px;
 }
 .col-2 p,
 .col-3 p,
 .col-4 p,
 .col-5 p {
   margin-left: 40px;
+  margin-bottom:10px;
   font-weight: 700;
 }
 .col li {

@@ -1,3 +1,6 @@
+*{
+    font-family: sans-serif;
+}
 #container{
     display:grid;
     grid-template-columns: 20% 79%;

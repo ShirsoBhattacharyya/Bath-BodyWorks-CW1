@@ -1,7 +1,9 @@
+*{
+    font-family: sans-serif;
+}
 #sidebar{
     height:100%;
 }
-
 #sidebar a {
     text-decoration: none;
     color: gray;

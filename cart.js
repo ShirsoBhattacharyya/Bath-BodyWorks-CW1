@@ -75,16 +75,16 @@ var subtotal=document.querySelector("#MSB").innerText
 
 var finalrate=document.querySelector("#MSB").innerText=(Number(subtotal)+elem.rate);
 
-var stax=document.querySelector("#tax").innerText=Math.ceil(finalrate*(1/10))
+var stax=document.querySelector("#tax").innerText=Math.ceil(0.1*elem.rate);
 
-document.querySelector("#fullamount").innerText=(10+stax+finalrate)
+document.querySelector("#fullamount").innerText=Math.ceil(10+(1.1*finalrate));
 
 document.querySelector("#updatebutton").addEventListener("click",function(){
 
     if(count.innerText>1)
     {
-        var updatetotal=document.querySelector("#MSB").innerText=(10+stax+finalrate)*Number(count.innerText);
-        document.querySelector("#fullamount").innerText=10+stax+updatetotal;
+        var updatetotal=document.querySelector("#MSB").innerText=(finalrate)*(Number(count.innerText));
+        document.querySelector("#fullamount").innerText=Math.ceil(10+(1.1*updatetotal));
         document.querySelector("#tax").innerText=(Math.ceil(updatetotal*(1/10)))
     }
     
@@ -95,8 +95,14 @@ document.querySelector("#productcountnumber").innerText=cartArr.length
 
     function callback(elem,i){
         cartArr.splice(i,1)
-   localStorage.setItem("cartItems",JSON.stringify(cartArr)||[]);
-window.location.reload();
+        localStorage.setItem("cartItems",JSON.stringify(cartArr));
+        window.location.reload();
 }
 
+}
+let btn=document.querySelector(".checkout");
+btn.addEventListener("click",orderPlace);
+function orderPlace(){
+    alert("Order Placed Successfully!");
+    window.location.href="index.html";
 }
