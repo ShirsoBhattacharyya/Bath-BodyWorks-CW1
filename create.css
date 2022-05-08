@@ -29,19 +29,27 @@
 }
 #container1{
     /* border: 1px solid black; */
-    margin-left: 400px;
+    /* margin-left: 550px; */
+    margin:auto;
     height: auto;
     width: 300px;
 }
+.signUpLast{
+    margin: auto;
+}
 .signUpLast>p{
     /* border: 1px solid black; */
-    margin-left: 500px;
+    /* margin-left: 500px; */
+    margin: auto;
+    text-align: center;
 
 }
 .signUpLast1>p{
     /* border: 1px solid black; */
-    margin-left: 410px;
+    /* margin-left: 410px; */
+    margin: auto;
     font-size: small;
+    text-align: center;
 
 }
 input{
